@@ -1,0 +1,19 @@
+#team {
+    h1 {
+        padding: 120px 0;
+        text-align: center;
+    }
+
+    .team__grid {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .team__grid__profile {
+            margin: 0 10px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

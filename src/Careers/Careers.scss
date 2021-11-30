@@ -1,0 +1,30 @@
+#careers {
+    padding-bottom: 80px;
+
+    h1 {
+        padding: 120px 0;
+        text-align: center;
+    }
+
+    #careers__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .careers__grid__box {
+            margin-left: 40px;
+        }
+
+        .careers__grid__box__office {
+            font-weight: bold;
+
+            img {
+                height: 15px;
+                padding-left: 5px;
+            }
+        }
+
+        p {
+            color: grey;
+        }
+    }
+}

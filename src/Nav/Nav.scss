@@ -1,0 +1,28 @@
+#navbar {
+    padding: 20px 0;
+
+    .navbar__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        button {
+            background: none;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        .navbar__wrapper__contact {
+            text-align: left;
+        }
+
+        .navbar__wrapper__logo {
+            text-align: center;
+            // font-family: 'GDSage-Bold';
+            // letter-spacing: 20px;
+        }
+
+        .navbar__wrapper__hamburger {
+            text-align: right;
+        }
+    }
+}
