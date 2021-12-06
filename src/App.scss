@@ -29,12 +29,13 @@ html {
     color: #212121;
     font-family: 'Acumin Variable Concept';
     font-size: 12px;
-    background: #f0f0f0;
+    background: #fafafa;
 }
 
 .container {
     margin: 0 auto;
     width: 80%;
+    max-width: 1200px;
 }
 
 .title-spaced {
@@ -49,7 +50,7 @@ html {
     padding: 10px 30px 8px;
     border-radius: 20px;
     text-transform: uppercase;
-    background: white;
+    background: #fafafa;
     transition: 0.5s;
     cursor: pointer;
 

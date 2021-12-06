@@ -10,6 +10,11 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
 
+        .brand__logo {
+            display: flex;
+            align-items: center;
+        }
+
         .brand__logo img {
             width: 150px;
             margin: 40px 0;

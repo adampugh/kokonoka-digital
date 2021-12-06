@@ -1,9 +1,9 @@
 import './Team.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUsers } from '@fortawesome/free-solid-svg-icons'
-import Profile1 from '../assets/img/profile1.jfif' 
-import Profile2 from '../assets/img/profile2.jfif' 
-import Profile3 from '../assets/img/profile3.jfif' 
+import Profile1 from '../assets/img/profile1.webp' 
+import Profile2 from '../assets/img/profile2.webp' 
+import Profile3 from '../assets/img/profile3.webp' 
 
 const Team = () => {
     return (

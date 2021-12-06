@@ -16,7 +16,7 @@ function App() {
             <header className="App-header"></header>
             <Nav />
             <Hero />
-            <Work />
+            {/* <Work /> */}
             <Brands />
             <Team />
             <Careers />

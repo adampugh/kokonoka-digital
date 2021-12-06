@@ -1,7 +1,7 @@
 #work {
     text-align: center;
 
-    h1 {
+    h2 {
         padding: 120px 0;
     }
 
@@ -33,7 +33,7 @@
                 padding: 40px 30px;
                 height: 100%;
                 transition: 0.8s;
-                border: 1px solid white;
+                border: 1px solid #fafafa;
 
                 span {
                     background: white;
@@ -87,15 +87,16 @@
 
     #work1 {
         background: linear-gradient(to bottom, rgba(33, 33, 33, 0.92), rgba(117, 19, 93, 0.01)),
-            url('../assets/img/10.jpg') no-repeat center center;
+            url('../assets/img/104.webp') no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        position: relative;
     }
 
     #work2 {
-        background: url('../assets/img/8.jpg') no-repeat center center;
+        background: url('../assets/img/84.webp') no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -103,7 +104,7 @@
     }
 
     #work3 {
-        background: url('../assets/img/3.jpg') no-repeat center center;
+        background: url('../assets/img/345.webp') no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -112,7 +113,7 @@
 
     #work4 {
         background: linear-gradient(to bottom, rgba(33, 33, 33, 0.92), rgba(117, 19, 93, 0.01)),
-            url('../assets/img/9.jpg') no-repeat center top;
+            url('../assets/img/94.webp') no-repeat center top;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
