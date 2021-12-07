@@ -56,7 +56,7 @@ const Brands = () => {
                 <motion.div variants={childVariants}>
                 <hr />
 
-                <p>"Kokonoka are fantastic and I would use them again and again. Excellent work and fantastic speed."</p>
+                <p>"Kokonoka are fantastic and I would use them again and again. Excellent work and fantastic turnaround."</p>
                 <div className="brands__quote">David Moore, CEO Princo</div>
                 </motion.div>
             </motion.div>

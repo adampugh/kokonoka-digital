@@ -1,6 +1,7 @@
 import 'normalize.css';
 import './App.scss';
 
+import Loading from './Loading';
 import Nav from './Nav';
 import Hero from './Hero';
 import Work from './Work';
@@ -14,9 +15,9 @@ function App() {
     return (
         <div className="App">
             <header className="App-header"></header>
+            {/* <Loading /> */}
             <Nav />
             <Hero />
-            {/* <Work /> */}
             <Brands />
             <Team />
             <Careers />

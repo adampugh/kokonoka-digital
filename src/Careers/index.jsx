@@ -10,7 +10,7 @@ const Careers = () => {
             <div id="careers__grid">
                 <div className="careers__grid__box">
                     <div className="careers__grid__box__office">
-                        <span>London</span>
+                        <h3>London</h3>
                         <span><img src={Marker} alt="marker" /></span>
                     </div>
                     <p>Frontend Architect</p>
@@ -18,14 +18,14 @@ const Careers = () => {
                 </div>
                 <div className="careers__grid__box">
                     <div className="careers__grid__box__office">
-                        <span>Tokyo</span>
+                        <h3>Tokyo</h3>
                         <span><img src={Marker} alt="marker" /></span>
                     </div>
                     <p>No current vacancies</p>
                 </div>
                 <div className="careers__grid__box">
                     <div className="careers__grid__box__office">
-                        <span>Valencia</span>
+                        <h3>Valencia</h3>
                         <span><img src={Marker} alt="marker" /></span>
                     </div>
                     <p>No current vacancies</p>

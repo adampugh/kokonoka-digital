@@ -1,28 +1,10 @@
-import { useRef, useEffect } from 'react';
 import './Work.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
-import { motion } from 'framer-motion';
-
-// const containerVariant = {
-//     hidden: {
-//         opacity: 0,
-//         y: 200
-//     },
-//     visible: {
-//         opacity: 1,
-//         y: 0,
-//         transition: {
-//             type: 'tween',
-//             delay: 2.2,
-//             duration: 1
-//         }
-//     }
-// }
 
 const Work = () => {
     return (
-        <motion.div id="work"   initial="hidden" animate="visible">
+        <div id="work">
             <h2 className="title-spaced">The Latest <FontAwesomeIcon icon={faNewspaper} /></h2>
             <div className="work__grid">
                 <div id="work1" className="work__grid__box work__grid__box--white">
@@ -53,7 +35,7 @@ const Work = () => {
             <div className="work__button__wrapper">
                 <button className="fade-button">View all work</button>
             </div>
-        </motion.div>
+        </div>
     )
 }
 

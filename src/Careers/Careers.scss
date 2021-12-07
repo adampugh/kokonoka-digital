@@ -1,5 +1,5 @@
 #careers {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
 
     h1 {
         padding: 120px 0;
@@ -16,6 +16,10 @@
 
         .careers__grid__box__office {
             font-weight: bold;
+
+            h3 {
+                display: inline;
+            }
 
             img {
                 height: 15px;
