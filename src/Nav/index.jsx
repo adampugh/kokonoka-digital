@@ -1,5 +1,6 @@
 import './Nav.scss';
 import { motion } from 'framer-motion';
+import GreyLeaf from '../assets/img/palm-leaf-grey.png'
 
 // const containerVariant = {
 //     hidden: {
@@ -26,7 +27,7 @@ const letterVariant = {
             // delay: 1,
             // duration: 1, 
             when: 'beforeChildren',
-            staggerChildren: 0.3,
+            staggerChildren: 0.2,
         }
     },
     
@@ -53,8 +54,37 @@ const buttonVariant = {
     visible: {
         opacity: 1,
         transition: {
-            delay: 4.5,
+            delay: 4,
             duration: 1
+        }
+    }
+}
+
+const leafVariantLeft = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: [0, 1, 0.4],
+        x: -50,
+        transition: {
+            duration: 2.4,
+            ease: 'easeInOut'
+        }
+    }
+}
+
+
+const leafVariantRight = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: [0, 1, 0.4],
+        x: 50,
+        transition: {
+            duration: 2.4,
+            ease: 'easeInOut'
         }
     }
 }
@@ -79,6 +109,22 @@ const Nav = () => {
                 </button>
                 <motion.button className="navbar__wrapper__hamburger title-spaced" variants={buttonVariant} initial="hidden" animate="visible">=</motion.button>
             </div>
+            <motion.div className="navbar__leaf__left--1" variants={leafVariantLeft} initial="hidden" animate="visible">
+                <img src={GreyLeaf} alt="palm leaf" />
+            </motion.div>
+            <motion.div className="navbar__leaf__left--2" variants={leafVariantLeft} initial="hidden" animate="visible">
+                <img src={GreyLeaf} alt="palm leaf" />
+            </motion.div>
+
+            <div className="leaf__right__wrapper">
+            <motion.div className="navbar__leaf__right--1" variants={leafVariantRight} initial="hidden" animate="visible">
+                <img src={GreyLeaf} alt="palm leaf" />
+            </motion.div>
+            <motion.div className="navbar__leaf__right--2" variants={leafVariantRight} initial="hidden" animate="visible">
+                <img src={GreyLeaf} alt="palm leaf" />
+            </motion.div>
+            </div>
+            
         </motion.nav>
     )
 }

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import 'normalize.css';
 import './App.scss';
 
@@ -11,20 +12,34 @@ import Careers from './Careers';
 import Contact from './Contact';
 import Footer from './Footer';
 
-function App() {
+const App = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+    }, []);
+
     return (
         <div className="App">
             <header className="App-header"></header>
             {/* <Loading /> */}
-            <Nav />
-            <Hero />
-            <Brands />
-            <Team />
-            <Careers />
-            <Contact />
-            <Footer />
+            {loading ? (
+                <Loading />
+            ) : (
+                <>
+                    <Nav />
+                    <Hero />
+                    <Brands />
+                    <Team />
+                    <Careers />
+                    <Contact />
+                    <Footer />
+                </>
+            )}
         </div>
     );
-}
+};
 
 export default App;

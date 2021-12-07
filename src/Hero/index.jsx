@@ -17,7 +17,7 @@ const containerVariants = {
             type: 'intertia',
             when: 'beforeChildren',
             staggerChildren: 0.6,
-            delay: 2
+            delay: 1.6
         },
     },
 };

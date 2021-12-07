@@ -9,6 +9,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px 20px;
+        z-index: 1;
 
         .work__grid__box {
             height: 600px;
@@ -93,6 +94,7 @@
         -o-background-size: cover;
         background-size: cover;
         position: relative;
+        z-index: 1;
     }
 
     #work2 {
@@ -101,6 +103,7 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        z-index: 1;
     }
 
     #work3 {
