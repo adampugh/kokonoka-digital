@@ -1,4 +1,7 @@
 import './Team.scss';
+import {useInView} from "react-intersection-observer";
+import { motion, useAnimation  } from 'framer-motion';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUsers } from '@fortawesome/free-solid-svg-icons'
 import Profile1 from '../assets/img/profile1.webp' 
@@ -6,8 +9,26 @@ import Profile2 from '../assets/img/profile2.webp'
 import Profile3 from '../assets/img/profile3.webp' 
 
 const Team = () => {
+    const {inView, entry, ref} = useInView();
+    const animationControl = useAnimation();
+
+    if (inView) {
+        animationControl.start({
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: 'intertia',
+                when: 'beforeChildren',
+                staggerChildren: 0.4,
+                delay: 0.5,
+                duration: 1
+            },
+        });
+    }
+
     return (
-        <div id="team" className="container">
+        <div id="team" className="container" ref={ref}>
+            <motion.div initial={{opacity: 0,y: 200}} animate={animationControl}>
             <h1 className="title-spaced">The team <FontAwesomeIcon icon={faUsers} /></h1>
             <div className="team__grid">
                 <div className="team__grid__profile">
@@ -26,6 +47,7 @@ const Team = () => {
                     <p>UX Designer</p>
                 </div>
             </div>
+            </motion.div>
         </div>
     )
 }
