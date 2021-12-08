@@ -9,7 +9,7 @@ const blackVariant = {
         y: '-100vh'
     },
     visible: {
-        y: ['-100vh', '0vh', '-100vh'],
+        y: ['-100vh', '0vh', '100vh'],
         transition: {
             type: 'tween',
             duration: 2,

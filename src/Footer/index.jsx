@@ -19,15 +19,15 @@ const Footer = () => {
                         <p><b>info@kokonoka.io</b></p>
                     </div>
                     <div className="footer__box footer__box2">
-                        <a href="#" className="fade-grey-hover">Home</a>
-                        <a href="#" className="fade-grey-hover">Work</a>
+                        <a href="#hero" className="fade-grey-hover">Home</a>
+                        <a href="#work" className="fade-grey-hover">Work</a>
                     </div>
                     <div className="footer__box footer__box2">
-                        <a href="#" className="fade-grey-hover">Team</a>
-                        <a href="#" className="fade-grey-hover">Careers</a>
+                        <a href="#team" className="fade-grey-hover">Team</a>
+                        <a href="#careers" className="fade-grey-hover">Careers</a>
                     </div>
                     <div className="footer__box footer__box3">
-                        <a href="#" className="fade-grey-hover">Contact</a>
+                        <a href="#contact" className="fade-grey-hover">Contact</a>
                         <a href="#" className="fade-grey-hover">Location</a>
                     </div>
                 </div>

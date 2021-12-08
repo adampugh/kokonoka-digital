@@ -1,0 +1,104 @@
+#menu {
+    background: #212121;
+    color: #fafafa;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 100;
+    overflow: hidden;
+
+    .menu__navbar__wrapper__container {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu__navbar__wrapper {
+        position: absolute;
+        // top: 0;
+        left: 0;
+        width: 100%;
+        color: #fafafa;
+        // width: 100vw;
+        padding: 20px 0;
+        z-index: 1000;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        button {
+            background: none;
+            border: none;
+            text-transform: uppercase;
+            color: #fafafa;
+        }
+
+        .menu__navbar__wrapper__contact {
+            text-align: left;
+        }
+
+        .menu__navbar__wrapper__logo {
+            text-align: center;
+        }
+
+        .menu__navbar__wrapper__hamburger {
+            text-align: right;
+        }
+    }
+
+    .loading__text {
+        position: absolute;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        top: 0;
+        left: -76px;
+    }
+
+    .loading__title {
+        font-size: 130px;
+        color: #fafafa;
+        transform: rotate(-90deg);
+        margin: 0;
+    }
+
+    .loading__leaf {
+        position: absolute;
+        right: -40px;
+        bottom: -80px;
+        transform: rotate(-79deg);
+
+        img {
+            transform: rotate(-79deg);
+            height: 600px;
+        }
+    }
+
+    .menu__items {
+        position: absolute;
+        padding: 140px 100px;
+        font-size: 80px;
+        max-width: 1000px;
+        z-index: 1000;
+
+        li {
+            list-style: none;
+            // font-family: 'GDSage-Bold';
+            display: inline-block;
+            color: grey;
+            padding-right: 40px;
+
+            span {
+                font-family: 'Acumin Variable Concept';
+                color: #fafafa;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

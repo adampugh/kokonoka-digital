@@ -1,19 +1,10 @@
-import './Nav.scss';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import './Nav.scss';
 import GreyLeaf from '../assets/img/palm-leaf-grey.png'
 
-// const containerVariant = {
-//     hidden: {
-//         opacity: 0
-//     },
-//     visible: {
-//         opacity: 1,
-//         transition: {
-//             duration: 1,
-//             delay: 0.5
-//         }
-//     }
-// }
+import Menu from '../Menu';
+
 
 const letterVariant = {
     hidden: {
@@ -90,6 +81,12 @@ const leafVariantRight = {
 }
 
 const Nav = () => {
+    const [menuIsVisible, setMenuIsVisible] = useState(false);
+
+    const handleHamburgerClick = () => {
+        setMenuIsVisible(!menuIsVisible);
+    }
+
     return (
         <motion.nav id="navbar" className="container">
             <div className="navbar__wrapper">
@@ -107,7 +104,11 @@ const Nav = () => {
                         <motion.span variants={childVariants}>A</motion.span>
                     </motion.span>
                 </button>
-                <motion.button className="navbar__wrapper__hamburger title-spaced" variants={buttonVariant} initial="hidden" animate="visible">=</motion.button>
+                <motion.button className="navbar__wrapper__hamburger title-spaced" 
+                    variants={buttonVariant}
+                    initial="hidden"
+                    animate="visible"
+                    onClick={handleHamburgerClick}>=</motion.button>
             </div>
             <motion.div className="navbar__leaf__left--1" variants={leafVariantLeft} initial="hidden" animate="visible">
                 <img src={GreyLeaf} alt="palm leaf" />
@@ -124,7 +125,7 @@ const Nav = () => {
                 <img src={GreyLeaf} alt="palm leaf" />
             </motion.div>
             </div>
-            
+            {menuIsVisible && <Menu handleHamburgerClick={handleHamburgerClick} />}
         </motion.nav>
     )
 }

@@ -78,7 +78,6 @@ const Brands = () => {
                 </div>
                 <motion.div variants={childVariants}  initial="hidden" animate="visible">
                 <hr />
-
                 <p>"Kokonoka are fantastic and I would use them again and again. Excellent work and fantastic turnaround."</p>
                 <div className="brands__quote">David Moore, CEO Princo</div>
                 </motion.div>
