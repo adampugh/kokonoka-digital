@@ -1,22 +1,18 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import './Nav.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import GreyLeaf from '../assets/img/palm-leaf-grey.png'
 
+import scrollToElement from '../utils/utils';
 import Menu from '../Menu';
 
 
 const letterVariant = {
-    hidden: {
-        // opacity: 0,
-        // y: 1200,
-    },
+    hidden: {},
     visible: {
-        // y: 0,
-        // opacity: 1,
-        transition: {
-            // delay: 1,
-            // duration: 1, 
+        transition: { 
             when: 'beforeChildren',
             staggerChildren: 0.2,
         }
@@ -27,11 +23,9 @@ const letterVariant = {
 const childVariants = {
     hidden: {
         opacity: 0,
-        // y: 1000,
     },
     visible: {
         opacity: 1,
-        // y: 0,
         transition: {
             duration: 0.4
         }
@@ -82,15 +76,27 @@ const leafVariantRight = {
 
 const Nav = () => {
     const [menuIsVisible, setMenuIsVisible] = useState(false);
+    const bodyTag = document.body.classList
 
     const handleHamburgerClick = () => {
+        menuIsVisible ? bodyTag.remove('menu__open') : setTimeout(() => bodyTag.add('menu__open'), 2000);
         setMenuIsVisible(!menuIsVisible);
+    }
+
+    const handleMenuItemClick = link => {
+        handleHamburgerClick();
+        setTimeout(() => { scrollToElement(link) }, 1500)
     }
 
     return (
         <motion.nav id="navbar" className="container">
             <div className="navbar__wrapper">
-                <motion.button className="navbar__wrapper__contact title-spaced" variants={buttonVariant} initial="hidden" animate="visible">
+                <motion.button 
+                    className="navbar__wrapper__contact title-spaced" 
+                    variants={buttonVariant} 
+                    initial="hidden" 
+                    animate="visible" 
+                    onClick={() => scrollToElement('contact')}>
                     Get in touch</motion.button>
                 <button className="navbar__wrapper__logo title-spaced">
                     <motion.span variants={letterVariant} initial="hidden" animate="visible">
@@ -108,7 +114,7 @@ const Nav = () => {
                     variants={buttonVariant}
                     initial="hidden"
                     animate="visible"
-                    onClick={handleHamburgerClick}>=</motion.button>
+                    onClick={handleHamburgerClick}><FontAwesomeIcon icon={faBars} /></motion.button>
             </div>
             <motion.div className="navbar__leaf__left--1" variants={leafVariantLeft} initial="hidden" animate="visible">
                 <img src={GreyLeaf} alt="palm leaf" />
@@ -116,16 +122,17 @@ const Nav = () => {
             <motion.div className="navbar__leaf__left--2" variants={leafVariantLeft} initial="hidden" animate="visible">
                 <img src={GreyLeaf} alt="palm leaf" />
             </motion.div>
-
             <div className="leaf__right__wrapper">
-            <motion.div className="navbar__leaf__right--1" variants={leafVariantRight} initial="hidden" animate="visible">
-                <img src={GreyLeaf} alt="palm leaf" />
-            </motion.div>
-            <motion.div className="navbar__leaf__right--2" variants={leafVariantRight} initial="hidden" animate="visible">
-                <img src={GreyLeaf} alt="palm leaf" />
-            </motion.div>
+                <motion.div className="navbar__leaf__right--1" variants={leafVariantRight} initial="hidden" animate="visible">
+                    <img src={GreyLeaf} alt="palm leaf" />
+                </motion.div>
+                <motion.div className="navbar__leaf__right--2" variants={leafVariantRight} initial="hidden" animate="visible">
+                    <img src={GreyLeaf} alt="palm leaf" />
+                </motion.div>
             </div>
-            {menuIsVisible && <Menu handleHamburgerClick={handleHamburgerClick} />}
+            <AnimatePresence>
+                {menuIsVisible && <Menu handleHamburgerClick={handleHamburgerClick} handleMenuItemClick={handleMenuItemClick} />}
+            </AnimatePresence>
         </motion.nav>
     )
 }

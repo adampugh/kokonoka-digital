@@ -1,3 +1,7 @@
+.menu__open {
+    position: fixed;
+}
+
 #menu {
     background: #212121;
     color: #fafafa;
@@ -33,6 +37,7 @@
             border: none;
             text-transform: uppercase;
             color: #fafafa;
+            cursor: pointer;
         }
 
         .menu__navbar__wrapper__contact {
@@ -55,7 +60,8 @@
         width: 100vw;
         margin: 0;
         top: 0;
-        left: -76px;
+        // left: -76px; // for smaller screens
+        left: 68px;
     }
 
     .loading__title {
@@ -79,7 +85,7 @@
 
     .menu__items {
         position: absolute;
-        padding: 140px 100px;
+        padding: 140px 0;
         font-size: 80px;
         max-width: 1000px;
         z-index: 1000;
