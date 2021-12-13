@@ -29,7 +29,7 @@
 
     .contact__form {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 40px;
     }
 
@@ -39,6 +39,16 @@
     }
 
     .fade__button__wrapper {
-        text-align: right;
+        text-align: left;
+    }
+
+    @media (min-width: 900px) {
+        .contact__form {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .fade__button__wrapper {
+            text-align: right;
+        }
     }
 }

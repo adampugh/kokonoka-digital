@@ -24,7 +24,7 @@ footer {
 
     .footer__box__wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .footer__box {
@@ -38,5 +38,12 @@ footer {
         text-align: center;
         margin: 0;
         padding: 40px 0;
+    }
+
+    @media (min-width: 900px) {
+        .footer__box__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
 }

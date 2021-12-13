@@ -85,7 +85,7 @@ const Nav = () => {
 
     const handleMenuItemClick = link => {
         handleHamburgerClick();
-        setTimeout(() => { scrollToElement(link) }, 1500)
+        setTimeout(() => { scrollToElement(link) }, 1200)
     }
 
     return (

@@ -7,13 +7,19 @@
     .team__grid {
         max-width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
 
         .team__grid__profile {
             margin: 0 10px;
             img {
                 max-width: 100%;
             }
+        }
+    }
+
+    @media (min-width: 900px) {
+        .team__grid {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }
