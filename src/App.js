@@ -5,7 +5,6 @@ import './App.scss';
 import Loading from './Loading';
 import Nav from './Nav';
 import Hero from './Hero';
-import Work from './Work';
 import Brands from './Brands';
 import Team from './Team';
 import Careers from './Careers';
@@ -28,7 +27,7 @@ const App = () => {
             {loading ? (
                 <Loading />
             ) : (
-                <>
+                <div className="site">
                     <Nav />
                     <Hero />
                     <Brands />
@@ -36,7 +35,7 @@ const App = () => {
                     <Careers />
                     <Contact />
                     <Footer />
-                </>
+                </div>
             )}
         </div>
     );

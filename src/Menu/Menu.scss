@@ -14,6 +14,11 @@
     z-index: 100;
     overflow: hidden;
 
+    .menu__wrapper {
+        position: relative;
+        height: 100%;
+    }
+
     .menu__navbar__wrapper__container {
         position: relative;
         // width: 100%;
@@ -42,6 +47,22 @@
 
         .menu__navbar__wrapper__contact {
             text-align: left;
+
+            .menu__navbar__wrapper__contact__mobile {
+                display: block;
+            }
+            .menu__navbar__wrapper__contact__desktop {
+                display: none;
+            }
+
+            @media (min-width: 900px) {
+                .menu__navbar__wrapper__contact__mobile {
+                    display: none;
+                }
+                .menu__navbar__wrapper__contact__desktop {
+                    display: block;
+                }
+            }
         }
 
         .menu__navbar__wrapper__logo {
@@ -55,13 +76,16 @@
 
     .loading__text {
         position: absolute;
-        display: flex;
         height: 100vh;
         width: 100vw;
         margin: 0;
         top: 0;
-        // left: -76px; // for smaller screens
-        left: 68px;
+        left: -85px;
+        display: none;
+
+        @media (min-width: 900px) {
+            display: flex;
+        }
     }
 
     .loading__title {
@@ -79,23 +103,27 @@
 
         img {
             transform: rotate(-79deg);
-            height: 600px;
+            height: 429px;
+
+            @media (min-width: 1200px) {
+                height: 600px;
+            }
         }
     }
 
     .menu__items {
         position: absolute;
-        padding: 140px 0;
-        font-size: 80px;
+        font-size: 40px;
         max-width: 1000px;
         z-index: 1000;
+        margin-top: 120px;
+        padding: 0;
 
         li {
             list-style: none;
-            // font-family: 'GDSage-Bold';
             display: inline-block;
             color: grey;
-            padding-right: 40px;
+            padding-right: 41px;
 
             span {
                 font-family: 'Acumin Variable Concept';
@@ -105,6 +133,11 @@
             &:hover {
                 cursor: pointer;
             }
+        }
+
+        @media (min-width: 900px) {
+            font-size: 80px;
+            margin-top: 140px;
         }
     }
 }

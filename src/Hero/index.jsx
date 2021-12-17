@@ -1,8 +1,7 @@
-import { useRef, useEffect, useState } from 'react';
 import './Hero.scss';
-import Leaf from '../assets/img/leaf.png';
 import { motion } from 'framer-motion';
 import Work from '../Work'
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 
 const containerVariants = {
@@ -36,10 +35,18 @@ const childVariants = {
     },
 };
 
-const Hero = () => {
-
+const HeroMobileText = () => {
     return (
-        <motion.div id="hero" className="container" variants={containerVariants} initial="hidden" animate="visible">
+        <motion.p id="hero__text" variants={childVariants}>
+            We pride ourselves on rapid <span>design</span>, <span>development</span> and <span>deployment</span> to take full advantage of momentum in the 
+            market and to build a solid foundation for <span>future growth</span>. 
+        </motion.p>
+    )
+}
+
+const HeroDesktopText = () => {
+    return (
+        <>
             <motion.p id="hero__text" variants={childVariants}>
                 We pride ourselves on rapid <span>design</span>, <span>development</span> and 
             </motion.p>
@@ -49,6 +56,16 @@ const Hero = () => {
             <motion.p id="hero__text" variants={childVariants}>
             market and to build a solid foundation for <span>future growth</span>. 
             </motion.p>
+        </>
+    )
+}
+
+const Hero = () => {
+    const { width } = useWindowDimensions();
+
+    return (
+        <motion.div id="hero" className="container" variants={containerVariants} initial="hidden" animate="visible">
+            { width < 900 ? <HeroMobileText /> : <HeroDesktopText />}
             <motion.div variants={childVariants}>
                 <Work />
             </motion.div>

@@ -28,7 +28,7 @@
 html {
     color: #212121;
     font-family: 'Acumin Variable Concept';
-    font-size: 12px;
+    font-size: 14px;
     background: #fafafa;
     overflow-x: hidden;
 }
@@ -40,7 +40,7 @@ html {
 }
 
 .title-spaced {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
@@ -68,5 +68,15 @@ html {
 
     &:hover {
         color: grey;
+    }
+}
+
+.site {
+    overflow-x: hidden;
+    position: relative;
+
+    @media (min-width: 900px) {
+        position: unset;
+        overflow-x: unset;
     }
 }
