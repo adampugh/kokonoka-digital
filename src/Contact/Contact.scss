@@ -19,7 +19,8 @@
         // font-family: 'GDSage-Bold';
     }
 
-    input {
+    input,
+    textarea {
         border-radius: 20px;
         padding: 10px 30px;
         box-sizing: border-box;
@@ -33,13 +34,37 @@
         grid-gap: 40px;
     }
 
-    button {
+    .contact__button {
         margin-top: 40px;
         text-align: center;
     }
 
     .fade__button__wrapper {
         text-align: left;
+    }
+
+    .contact__textarea {
+        label {
+            margin-top: 40px;
+        }
+    }
+
+    .react-datepicker {
+        border: 1px solid #f0f0f0 !important;
+        font-family: 'Acumin Variable Concept';
+
+        .react-datepicker__navigation {
+            top: -2px !important;
+        }
+
+        .react-datepicker__triangle {
+            transform: none !important;
+            left: 90px !important;
+
+            &:after {
+                border-bottom-color: #f0f0f0 !important;
+            }
+        }
     }
 
     @media (min-width: 900px) {

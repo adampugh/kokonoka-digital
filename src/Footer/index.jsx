@@ -33,9 +33,9 @@ const Footer = () => {
                 </div>
                 <p className="footer__copyright">© KOKONOKA 2021</p>
                 <ul>
-                    <li>wire up contact form // tried this</li>
                     <li>update all links</li>
                     <li>add real pictures</li>
+                    <li>add routes</li>
                     <li>make responsive</li>
                     <li>deploy</li>
                 </ul>

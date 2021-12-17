@@ -14,11 +14,11 @@
         .brand__logo {
             display: flex;
             align-items: center;
+            justify-self: center;
         }
 
         .brand__logo img {
             width: 150px;
-            margin: 40px 0;
             max-width: 100%;
         }
     }
@@ -42,6 +42,10 @@
     @media (min-width: 900px) {
         .brands__grid {
             grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .brand__logo img {
+                margin: 40px 0;
+            }
         }
     }
 }

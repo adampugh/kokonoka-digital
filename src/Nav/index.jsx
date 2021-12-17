@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import GreyLeaf from '../assets/img/palm-leaf-grey.png'
 
 import scrollToElement from '../utils/utils';
@@ -97,7 +97,9 @@ const Nav = () => {
                     initial="hidden" 
                     animate="visible" 
                     onClick={() => scrollToElement('contact')}>
-                    Get in touch</motion.button>
+                        <span className="navbar__wrapper__contact__mobile"><FontAwesomeIcon icon={faPaperPlane} /></span>
+                        <span className="navbar__wrapper__contact__desktop">Get in touch</span>
+                    </motion.button>
                 <button className="navbar__wrapper__logo title-spaced">
                     <motion.span variants={letterVariant} initial="hidden" animate="visible">
                         <motion.span variants={childVariants}>K</motion.span>
