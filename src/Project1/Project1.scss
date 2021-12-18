@@ -1,0 +1,27 @@
+#project {
+    padding: 120px 0;
+
+    .project__text {
+        text-align: center;
+        font-family: 'GDSage-Bold';
+        padding: 0 80px 120px;
+    }
+
+    .project__grid {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr;
+
+        .project__grid__img img {
+            max-width: 100%;
+        }
+
+        @media (min-width: 900px) {
+            grid-template-columns: 1fr 1fr;
+
+            .project__grid__img:nth-child(even) {
+                margin-top: 200px;
+            }
+        }
+    }
+}
