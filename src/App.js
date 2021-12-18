@@ -1,43 +1,26 @@
 import { useState, useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import 'normalize.css';
 import './App.scss';
+import { AnimatePresence } from 'framer-motion';
 
-import Loading from './Loading';
-import Nav from './Nav';
-import Hero from './Hero';
-import Brands from './Brands';
-import Team from './Team';
-import Careers from './Careers';
-import Contact from './Contact';
-import Footer from './Footer';
+import HomePage from './HomePage';
+import WorkPage from './WorkPage';
+import Project1 from './Project1';
+import NotFoundPage from './NotFoundPage';
 
 const App = () => {
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 2000);
-    }, []);
+    const location = useLocation();
 
     return (
-        <div className="App">
-            <header className="App-header"></header>
-            {/* <Loading /> */}
-            {loading ? (
-                <Loading />
-            ) : (
-                <div className="site">
-                    <Nav />
-                    <Hero />
-                    <Brands />
-                    <Team />
-                    <Careers />
-                    <Contact />
-                    <Footer />
-                </div>
-            )}
-        </div>
+        <AnimatePresence exitBeforeEnter>
+            <Routes location={location} key={location.key}>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/work" element={<WorkPage />} />
+                <Route path="/project1" element={<Project1 />} />
+                <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+        </AnimatePresence>
     );
 };
 

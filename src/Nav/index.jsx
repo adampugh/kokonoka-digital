@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -100,18 +101,20 @@ const Nav = () => {
                         <span className="navbar__wrapper__contact__mobile"><FontAwesomeIcon icon={faPaperPlane} /></span>
                         <span className="navbar__wrapper__contact__desktop">Get in touch</span>
                     </motion.button>
-                <button className="navbar__wrapper__logo title-spaced">
-                    <motion.span variants={letterVariant} initial="hidden" animate="visible">
-                        <motion.span variants={childVariants}>K</motion.span>
-                        <motion.span variants={childVariants}>O</motion.span>
-                        <motion.span variants={childVariants}>K</motion.span>
-                        <motion.span variants={childVariants}>O</motion.span>
-                        <motion.span variants={childVariants}>N</motion.span>
-                        <motion.span variants={childVariants}>O</motion.span>
-                        <motion.span variants={childVariants}>K</motion.span>
-                        <motion.span variants={childVariants}>A</motion.span>
-                    </motion.span>
-                </button>
+                    <button className="navbar__wrapper__logo title-spaced">
+                <Link to="/">
+                        <motion.span variants={letterVariant} initial="hidden" animate="visible">
+                            <motion.span variants={childVariants}>K</motion.span>
+                            <motion.span variants={childVariants}>O</motion.span>
+                            <motion.span variants={childVariants}>K</motion.span>
+                            <motion.span variants={childVariants}>O</motion.span>
+                            <motion.span variants={childVariants}>N</motion.span>
+                            <motion.span variants={childVariants}>O</motion.span>
+                            <motion.span variants={childVariants}>K</motion.span>
+                            <motion.span variants={childVariants}>A</motion.span>
+                        </motion.span>
+                </Link>
+                    </button>
                 <motion.button className="navbar__wrapper__hamburger title-spaced" 
                     variants={buttonVariant}
                     initial="hidden"

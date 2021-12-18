@@ -19,7 +19,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const [email, setEmail] = useState('');
     const [disabled, setDisabled] = useState(false);
-    const [openModal, setOpenModal] = useState(false);
+    const [openModal, setOpenModal] = useState(true);
     
 
     const sendEmail = (e) => {

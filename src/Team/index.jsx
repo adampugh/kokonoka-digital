@@ -29,24 +29,24 @@ const Team = () => {
     return (
         <div id="team" className="container" ref={ref}>
             <motion.div initial={{opacity: 0,y: 200}} animate={animationControl}>
-            <h1 className="title-spaced">The team <FontAwesomeIcon icon={faUsers} /></h1>
-            <div className="team__grid">
-                <div className="team__grid__profile">
-                    <img src={Profile1} alt="team profile" />
-                    <h3>David Li</h3>
-                    <p>Marketing & Strategy</p>
+                <h1 className="title-spaced">The team <FontAwesomeIcon icon={faUsers} /></h1>
+                <div className="team__grid">
+                    <div className="team__grid__profile">
+                        <img src={Profile1} alt="team profile" />
+                        <h3>David Li</h3>
+                        <p>Marketing & Strategy</p>
+                    </div>
+                    <div className="team__grid__profile">
+                        <img src={Profile2} alt="team profile" />
+                        <h3>Adam Pugh</h3>
+                        <p>Frontend Developer</p>
+                    </div>
+                    <div className="team__grid__profile">
+                        <img src={Profile3} alt="team profile" />
+                        <h3>Kate Waters</h3>
+                        <p>UX Designer</p>
+                    </div>
                 </div>
-                <div className="team__grid__profile">
-                    <img src={Profile2} alt="team profile" />
-                    <h3>Adam Pugh</h3>
-                    <p>Frontend Developer</p>
-                </div>
-                <div className="team__grid__profile">
-                    <img src={Profile3} alt="team profile" />
-                    <h3>Kate Waters</h3>
-                    <p>UX Designer</p>
-                </div>
-            </div>
             </motion.div>
         </div>
     )

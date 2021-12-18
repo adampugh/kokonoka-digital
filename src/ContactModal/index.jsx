@@ -8,6 +8,8 @@ const customStyles = {
         backgroundColor: 'rgba(9, 9, 9, 0.75)'
     },
     content: {
+        background: 'white',
+        position: 'absolute',
         top: '50%',
         left: '50%',
         right: 'auto',
@@ -26,7 +28,7 @@ const ConactModal = ({ openModal, setOpenModal }) => {
         <Modal isOpen={openModal} 
             onRequestClose={closeModal}
             style={customStyles}
-            contentLabel="Email Sent Modal" className="contactModal">
+            contentLabel="Email Sent Modal" className="contactModal" ariaHideApp={false}>
             <h1>Email Sent <FontAwesomeIcon icon={faSmile} /></h1>
             <p>Thank you. We will get back to you as soon as possible.</p>
         </Modal>
