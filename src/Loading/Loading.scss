@@ -8,14 +8,30 @@
         height: 100vh;
     }
 
+    // .loading__text {
+    //     position: absolute;
+    //     display: flex;
+    //     height: 100vh;
+    //     width: 100vw;
+    //     margin: 0;
+    //     top: 0;
+    //     left: -76px;
+    // }
+
     .loading__text {
-        position: absolute;
-        display: flex;
-        height: 100vh;
-        width: 100vw;
-        margin: 0;
-        top: 0;
-        left: -76px;
+        // height: 100vh;
+        // width: 100vw;
+        // margin: 0;
+        // top: 0;
+        // left: -85px;
+        display: none;
+
+        @media (min-width: 900px) {
+            position: absolute;
+            left: -340px;
+            top: 245px;
+            display: flex;
+        }
     }
 
     .loading__title {

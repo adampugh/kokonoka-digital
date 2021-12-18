@@ -73,8 +73,8 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contact__textarea">
-                    <label htmlFor="message">Project Enquiry</label>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Enter project summary" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                    <label htmlFor="message">Project Information</label>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Enter project information" value={message} onChange={e => setMessage(e.target.value)}></textarea>
                 </div>
                 <div className="fade__button__wrapper">
                     <button className="fade-button contact__button" type="submit" disabled={disabled}>Send <FontAwesomeIcon icon={faPaperPlane} /></button>

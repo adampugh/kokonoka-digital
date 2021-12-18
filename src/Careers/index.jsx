@@ -6,7 +6,7 @@ import { faHandsHelping } from '@fortawesome/free-solid-svg-icons'
 import Marker from '../assets/icons/marker.png';
 
 const Careers = () => {
-    const {inView, entry, ref} = useInView();
+    const {inView, ref} = useInView();
     const animationControl = useAnimation();
 
     if (inView) {

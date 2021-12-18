@@ -36,7 +36,6 @@ const Footer = () => {
                     <li>update all links</li>
                     <li>add real pictures</li>
                     <li>add routes</li>
-                    <li>deploy</li>
                 </ul>
             </div>
         </footer>

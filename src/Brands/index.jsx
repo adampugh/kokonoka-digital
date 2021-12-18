@@ -7,23 +7,6 @@ import Chanel from '../assets/brands/chanel.png';
 import PF from '../assets/brands/pf.png';
 import Plaid from '../assets/brands/plaid.png';
 
-const containerVariants = {
-    hidden: {
-        opacity: 0,
-        y: 200,
-    },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            type: 'intertia',
-            when: 'beforeChildren',
-            staggerChildren: 0.4,
-        },
-    },
-};
-
-
 
 const childVariants = {
     hidden: {
@@ -40,7 +23,7 @@ const childVariants = {
 };
 
 const Brands = () => {
-    const {inView, entry, ref} = useInView();
+    const {inView, ref} = useInView();
     const animationControl = useAnimation();
     if (inView) {
         animationControl.start({
