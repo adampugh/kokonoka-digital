@@ -2,7 +2,7 @@
     padding: 120px 0;
 
     .project__text {
-        text-align: center;
+        // text-align: center;
         font-family: 'GDSage-Bold';
         padding: 0 80px 120px;
     }
@@ -14,6 +14,7 @@
 
         .project__grid__img img {
             max-width: 100%;
+            position: relative;
         }
 
         @media (min-width: 900px) {

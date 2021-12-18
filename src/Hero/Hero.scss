@@ -31,4 +31,14 @@
             margin: 0;
         }
     }
+
+    @media (min-width: 1320px) {
+        p {
+            font-family: 'GDSage-Bold';
+            font-size: 35px;
+            text-align: left;
+            padding: 0 90px;
+            margin: 0;
+        }
+    }
 }

@@ -65,7 +65,7 @@ const Hero = () => {
 
     return (
         <motion.div id="hero" className="container" variants={containerVariants} initial="hidden" animate="visible">
-            { width < 900 ? <HeroMobileText /> : <HeroDesktopText />}
+            { width < 1320 ? <HeroMobileText /> : <HeroDesktopText />}
             <motion.div variants={childVariants}>
                 <Work />
             </motion.div>

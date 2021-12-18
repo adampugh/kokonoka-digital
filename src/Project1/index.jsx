@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion';
 import './Project1.scss'
 
@@ -36,14 +37,32 @@ const childVariants = {
         }
     },
 };
+
+const projects = {
+    1: {
+        text: 'Working with colours to create a brand new exciting experience for an excellent energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas.',
+        images: [Img, Img2, Img4, Img3]
+    }
+}
+
+
 const Project1 = () => {
     const [loading, setLoading] = useState(true);
+    const [project, setProject] = useState();
+
+    const location = useLocation();
+
 
     useEffect(() => {
         setTimeout(() => {
             setLoading(false);
         }, 2000);
     }, []);
+
+    useEffect(() => {
+        const projectNumber = location.pathname.match(/\d/g).join('')
+        setProject(projects[projectNumber]);
+    }, [])
     
     return loading ? (<Loading />) : (
         <motion.div variants={containerVariants} exit="exit">
@@ -51,21 +70,14 @@ const Project1 = () => {
             <motion.div className="container" variants={childVariants} initial="hidden" animate="visible">
                 <div id="project">
                     <div className="project__text">
-                        <h1>Working with colours to create a brand new exciting experience for an excellent energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas.</h1>
+                        <h1>{project.text}</h1>
                     </div>
                     <div className="project__grid">
-                        <div className="project__grid__img">
-                            <img src={Img} alt="" />
-                        </div>
-                        <div className="project__grid__img">
-                            <img src={Img2} alt="" />
-                        </div>
-                        <div className="project__grid__img">
-                            <img src={Img3} alt="" />
-                        </div>
-                        <div className="project__grid__img">
-                            <img src={Img4} alt="" />
-                        </div>
+                        {project.images.map((img, i) => (
+                            <div className="project__grid__img">
+                                <img src={img} alt="" key={i} />
+                            </div>
+                        ))}
                     </div>
                 
                 </div>
