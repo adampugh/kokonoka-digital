@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
                 <div className="footer__box__wrapper">
                     <div className="footer__box footer__box1">
-                        <p>9 King Street, Waterloo</p>
+                        <p>3 Oxford Road, Waterloo</p>
                         <p>L22 5NS</p>
                         <p>+44 0798135120</p>
                         <p><b>info@kokonoka.io</b></p>
@@ -32,10 +32,6 @@ const Footer = () => {
                     </div>
                 </div>
                 <p className="footer__copyright">© KOKONOKA 2021</p>
-                <ul>
-                    <li>update all links</li>
-                    <li>add real pictures</li>
-                </ul>
             </div>
         </footer>
     )

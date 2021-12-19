@@ -8,6 +8,11 @@ import Contact from '../Contact';
 import Footer from '../Footer';
 import Loading from '../Loading';
 
+import HomeKitchenDesktop from '../assets/projects/HomeKitchenDesktop.png'
+import HomeKitchen1 from '../assets/projects/HomeKitchen1.png';
+import HomeKitchen2 from '../assets/projects/HomeKitchen2.png';
+import HomeKitchen3 from '../assets/projects/HomeKitchen3.png';
+
 import Img from '../assets/img/345.webp'
 import Img2 from '../assets/img/104.webp'
 import Img3 from '../assets/img/84.webp'
@@ -39,9 +44,10 @@ const childVariants = {
 };
 
 const projects = {
-    1: {
-        text: 'Working with colours to create a brand new exciting experience for an excellent energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas.',
-        images: [Img, Img2, Img4, Img3]
+    homeKitchen: {
+        title: 'HomeKitchen',
+        text: 'Working with energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas. Working with colours to create a brand new exciting experience for an  forward with new ideas.',
+        images: [HomeKitchenDesktop, HomeKitchen3, HomeKitchen2, HomeKitchen1]
     }
 }
 
@@ -60,8 +66,10 @@ const Project1 = () => {
     }, []);
 
     useEffect(() => {
-        const projectNumber = location.pathname.match(/\d/g).join('')
-        setProject(projects[projectNumber]);
+        const projectName = location.pathname.replace(/\//g, "")
+
+        setProject(projects[projectName]);
+        
     }, [])
     
     return loading ? (<Loading />) : (
@@ -70,6 +78,7 @@ const Project1 = () => {
             <motion.div className="container" variants={childVariants} initial="hidden" animate="visible">
                 <div id="project">
                     <div className="project__text">
+                        {/* <h1>{project.title}</h1> */}
                         <h1>{project.text}</h1>
                     </div>
                     <div className="project__grid">

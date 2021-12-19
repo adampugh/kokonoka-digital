@@ -3,14 +3,27 @@
 
     .project__text {
         // text-align: center;
-        font-family: 'GDSage-Bold';
         padding: 0 80px 120px;
+        h1 {
+            text-align: left;
+            font-family: 'GDSage-Bold';
+
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 
     .project__grid {
         display: grid;
         gap: 40px;
         grid-template-columns: 1fr;
+
+        .project__grid__img {
+            justify-self: center;
+        }
 
         .project__grid__img img {
             max-width: 100%;

@@ -74,12 +74,14 @@
     }
 
     #work2 {
-        background: url('../assets/img/84.webp') no-repeat center center;
+        background: linear-gradient(to bottom, rgba(184, 184, 184, 0.92), rgba(117, 19, 93, 0.01)),
+            url('../assets/projects/HomeKitchen3.png') no-repeat center center;
+        // background: url('../assets/projects/HomeKitchen1.png') no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        z-index: 1;
+        position: relative;
     }
 
     #work3 {
