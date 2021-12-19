@@ -42,7 +42,7 @@ const WorkPage = () => {
     }, []);
 
     return loading ? (<Loading />) : (
-        <motion.div variants={containerVariants} exit="exit">
+        <motion.div className="site" variants={containerVariants} exit="exit">
             <Nav />
             <motion.div className="container" variants={childVariants} initial="hidden" animate="visible">
                 <Work />

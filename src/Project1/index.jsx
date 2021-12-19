@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import { motion } from 'framer-motion';
 import './Project1.scss'
 
@@ -12,11 +12,6 @@ import HomeKitchenDesktop from '../assets/projects/HomeKitchenDesktop.png'
 import HomeKitchen1 from '../assets/projects/HomeKitchen1.png';
 import HomeKitchen2 from '../assets/projects/HomeKitchen2.png';
 import HomeKitchen3 from '../assets/projects/HomeKitchen3.png';
-
-import Img from '../assets/img/345.webp'
-import Img2 from '../assets/img/104.webp'
-import Img3 from '../assets/img/84.webp'
-import Img4 from '../assets/img/94.webp'
 
 const containerVariants = {
     exit: {
@@ -73,7 +68,7 @@ const Project1 = () => {
     }, [])
     
     return loading ? (<Loading />) : (
-        <motion.div variants={containerVariants} exit="exit">
+        <motion.div className="site" variants={containerVariants} exit="exit">
             <Nav />
             <motion.div className="container" variants={childVariants} initial="hidden" animate="visible">
                 <div id="project">
@@ -90,6 +85,11 @@ const Project1 = () => {
                     </div>
                 
                 </div>
+                <div className="work__button__wrapper">
+                <Link to="/work">
+                    <button className="fade-button">View all work</button>
+                </Link>
+            </div>
             </motion.div>
             <Contact />
             <Footer />

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Nav.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -33,18 +33,18 @@ const childVariants = {
     },
 };
 
-const buttonVariant = {
-    hidden: {
-        opacity: 0
-    },
-    visible: {
-        opacity: 1,
-        transition: {
-            delay: 4,
-            duration: 1
-        }
-    }
-}
+// const buttonVariant = {
+//     hidden: {
+//         opacity: 0
+//     },
+//     visible: {
+//         opacity: 1,
+//         transition: {
+//             delay: 4,
+//             duration: 1
+//         }
+//     }
+// }
 
 const leafVariantLeft = {
     hidden: {
@@ -89,14 +89,18 @@ const Nav = () => {
         setTimeout(() => { scrollToElement(link) }, 1200)
     }
 
+    const location = useLocation();
+    const buttonVariantDelay = location.pathname === '/' ? 4 : 1.5;
+    console.log(buttonVariantDelay)
+
     return (
         <motion.nav id="navbar" className="container">
             <div className="navbar__wrapper">
                 <motion.button 
                     className="navbar__wrapper__contact title-spaced" 
-                    variants={buttonVariant} 
-                    initial="hidden" 
-                    animate="visible" 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1}}
+                    transition={{ delay: buttonVariantDelay, duration: 1 }} 
                     onClick={() => scrollToElement('contact')}>
                         <span className="navbar__wrapper__contact__mobile"><FontAwesomeIcon icon={faPaperPlane} /></span>
                         <span className="navbar__wrapper__contact__desktop">Get in touch</span>
@@ -116,9 +120,9 @@ const Nav = () => {
                 </Link>
                     </button>
                 <motion.button className="navbar__wrapper__hamburger title-spaced" 
-                    variants={buttonVariant}
-                    initial="hidden"
-                    animate="visible"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1}}
+                    transition={{ delay: buttonVariantDelay, duration: 1 }}
                     onClick={handleHamburgerClick}><FontAwesomeIcon icon={faBars} /></motion.button>
             </div>
             <motion.div className="navbar__leaf__left--1" variants={leafVariantLeft} initial="hidden" animate="visible">

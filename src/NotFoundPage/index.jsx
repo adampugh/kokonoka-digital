@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import './NotFoundPage.scss';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -17,7 +16,7 @@ const containerVariants = {
 
 const NotFoundPage  = () => {
     return (
-        <motion.div variants={containerVariants} exit="exit">
+        <motion.div className="site" variants={containerVariants} exit="exit">
             <Nav />
             <div id="notFound" className="container">
                 <h1>404</h1>

@@ -20,7 +20,7 @@ const Work = () => {
                     <div id="work2" className="work__grid__box work__grid__box--black">
                         <div className="work__grid__box__overlay">
                             <span className="work__grid__box__button">Work</span>
-                            <h3>Clean minimalist design for meal-prep subscription service HomeKitchen</h3>
+                            <h3>Clean minimalist design for meal-prep subscription service: HomeKitchen</h3>
                         </div>
                     </div>
                 </Link>
