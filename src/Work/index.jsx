@@ -32,11 +32,11 @@ const Work = () => {
                         </div>
                     </div>
                 </Link>
-                <Link to="/project1">
+                <Link to="/medican">
                     <div id="work4" className="work__grid__box work__grid__box--white">
                         <div className="work__grid__box__overlay">
                             <span className="work__grid__box__button">Work</span>
-                            <h3>Everything & Anything: How nothing is possible when something is.</h3>
+                            <h3>Health & Growth - Working with Medican to create sleek and polished branding</h3>
                         </div>
                     </div>
                 </Link>

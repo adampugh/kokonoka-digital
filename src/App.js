@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 
 import HomePage from './HomePage';
 import WorkPage from './WorkPage';
-import Project1 from './Project1';
+import ProjectPage from './ProjectPage';
 import NotFoundPage from './NotFoundPage';
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
             <Routes location={location} key={location.key}>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/work" element={<WorkPage />} />
-                <Route path="/:project" element={<Project1 />} />
+                <Route path="/:project" element={<ProjectPage />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </AnimatePresence>

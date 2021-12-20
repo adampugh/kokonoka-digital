@@ -33,19 +33,6 @@ const childVariants = {
     },
 };
 
-// const buttonVariant = {
-//     hidden: {
-//         opacity: 0
-//     },
-//     visible: {
-//         opacity: 1,
-//         transition: {
-//             delay: 4,
-//             duration: 1
-//         }
-//     }
-// }
-
 const leafVariantLeft = {
     hidden: {
         opacity: 0
@@ -59,7 +46,6 @@ const leafVariantLeft = {
         }
     }
 }
-
 
 const leafVariantRight = {
     hidden: {

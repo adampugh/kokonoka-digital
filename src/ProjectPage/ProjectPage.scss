@@ -1,0 +1,51 @@
+#project {
+    padding: 100px 0;
+
+    .project__text {
+        margin-bottom: 120px;
+        position: relative;
+
+        h1 {
+            text-align: left;
+            font-family: 'GDSage-Bold';
+            font-size: 25px;
+
+            @media (min-width: 900px) {
+                font-size: 35px;
+                padding: 0 80px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .project__grid {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr;
+
+        .project__grid__img {
+            justify-self: center;
+        }
+
+        .project__grid__img img {
+            max-width: 100%;
+            position: relative;
+        }
+
+        @media (min-width: 900px) {
+            grid-template-columns: 1fr 1fr;
+
+            .project__grid__img:nth-child(even) {
+                margin-top: 200px;
+            }
+        }
+    }
+}
+
+.work__button__wrapper {
+    text-align: center;
+    margin: 80px 0 120px;
+}
