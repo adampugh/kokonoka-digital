@@ -14,6 +14,7 @@ import HomeKitchen2 from '../assets/projects/HomeKitchen2.png';
 import HomeKitchen3 from '../assets/projects/HomeKitchen3.png';
 
 import MedicanDesktop from '../assets/projects/Medican-Desktop.png'
+import MedicanDesktop3 from '../assets/projects/Medican-Desktop3.png'
 import Medican1 from '../assets/projects/Medican.jpg'
 import Medican2 from '../assets/projects/Medican2.jpg'
 import Medican3 from '../assets/projects/Medican3.jpg'
@@ -52,7 +53,7 @@ const projects = {
     medican: {
         title: 'Medican',
         text: 'Working with energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas. Working with colours to create a brand new exciting experience for an  forward with new ideas.',
-        images: [MedicanDesktop, Medican1, Medican3, Medican2]
+        images: [MedicanDesktop3, Medican1, Medican3, Medican2]
     }
 }
 
