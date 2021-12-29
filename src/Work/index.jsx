@@ -8,7 +8,7 @@ const Work = () => {
         <div id="work">
             <h2 className="title-spaced">The Latest <FontAwesomeIcon icon={faNewspaper} /></h2>
             <div className="work__grid">
-                <Link to="/project1">
+                <Link to="/45N">
                     <div id="work1" className="work__grid__box work__grid__box--white">
                         <div className="work__grid__box__overlay">
                             <span className="work__grid__box__button">Work</span>

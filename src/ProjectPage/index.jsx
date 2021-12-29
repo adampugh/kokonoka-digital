@@ -19,6 +19,12 @@ import Medican1 from '../assets/projects/Medican.jpg'
 import Medican2 from '../assets/projects/Medican2.jpg'
 import Medican3 from '../assets/projects/Medican3.jpg'
 
+import FortyFiveNDesktop from '../assets/projects/45°N.png';
+import FortFiveN1 from '../assets/projects/FortyFiveN1.jpg'
+import FortFiveN2 from '../assets/projects/FortyFiveN2.jpg'
+import FortFiveN3 from '../assets/projects/FortyFiveN3.jpg'
+
+
 const containerVariants = {
     exit: {
         opacity: 0,
@@ -54,7 +60,12 @@ const projects = {
         title: 'Medican',
         text: 'Working with energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas. Working with colours to create a brand new exciting experience for an  forward with new ideas.',
         images: [MedicanDesktop3, Medican1, Medican3, Medican2]
-    }
+    },
+    '45N': {
+        title: '45°N',
+        text: 'Working with energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas. Working with colours to create a brand new exciting experience for an  forward with new ideas.',
+        images: [FortyFiveNDesktop, FortFiveN1, FortFiveN2, FortFiveN3]
+    },
 }
 
 const Project1 = () => {
