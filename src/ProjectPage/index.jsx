@@ -24,6 +24,11 @@ import FortFiveN1 from '../assets/projects/FortyFiveN1.jpg'
 import FortFiveN2 from '../assets/projects/FortyFiveN2.jpg'
 import FortFiveN3 from '../assets/projects/FortyFiveN3.jpg'
 
+import KamuraDesktop from '../assets/projects/KamuraDesktop.png';
+import Kamura1 from '../assets/projects/Kamura1.png'
+import Kamura2 from '../assets/projects/Kamura2.png'
+import Kamura3 from '../assets/projects/Kamura3.png'
+
 
 const containerVariants = {
     exit: {
@@ -66,6 +71,11 @@ const projects = {
         text: 'Working with energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas. Working with colours to create a brand new exciting experience for an  forward with new ideas.',
         images: [FortyFiveNDesktop, FortFiveN1, FortFiveN2, FortFiveN3]
     },
+    kamura: {
+        title: 'Kamura',
+        text: 'Working with cosmetics brand Kamura, we created a sleek and stylish design to help with conversions in Western and Japanese markets.',
+        images: [KamuraDesktop, Kamura1, Kamura3, Kamura2]
+    }
 }
 
 const Project1 = () => {

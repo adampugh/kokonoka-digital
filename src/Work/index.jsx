@@ -24,7 +24,7 @@ const Work = () => {
                         </div>
                     </div>
                 </Link>
-                <Link to="/project1">
+                <Link to="/kamura">
                     <div id="work3" className="work__grid__box work__grid__box--black">
                         <div className="work__grid__box__overlay">
                             <span className="work__grid__box__button">Work</span>
