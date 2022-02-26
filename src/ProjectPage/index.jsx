@@ -13,12 +13,6 @@ import HomeKitchen1 from '../assets/projects/HomeKitchen1.png';
 import HomeKitchen2 from '../assets/projects/HomeKitchen2.png';
 import HomeKitchen3 from '../assets/projects/HomeKitchen3.png';
 
-// import MedicanDesktop from '../assets/projects/Medican-Desktop.png'
-// import MedicanDesktop3 from '../assets/projects/Medican-Desktop3.png'
-// import Medican1 from '../assets/projects/Medican.jpg'
-// import Medican2 from '../assets/projects/Medican2.jpg'
-// import Medican3 from '../assets/projects/Medican3.jpg'
-
 import AEDeskop from '../assets/projects/AEDesktop.png';
 import AE1 from '../assets/projects/AE1.jpg';
 import AE2 from '../assets/projects/AE2.jpg';
