@@ -96,14 +96,9 @@ const Nav = () => {
                 <button className='navbar__wrapper__logo title-spaced'>
                     <Link to='/'>
                         <motion.span variants={letterVariant} initial='hidden' animate='visible'>
-                            <motion.span variants={childVariants}>K</motion.span>
-                            <motion.span variants={childVariants}>O</motion.span>
-                            <motion.span variants={childVariants}>K</motion.span>
-                            <motion.span variants={childVariants}>O</motion.span>
-                            <motion.span variants={childVariants}>N</motion.span>
-                            <motion.span variants={childVariants}>O</motion.span>
-                            <motion.span variants={childVariants}>K</motion.span>
-                            <motion.span variants={childVariants}>A</motion.span>
+                            {['K', 'O', 'K', 'O', 'N', 'O', 'K', 'A'].map((letter) => (
+                                <motion.span variants={childVariants}>{letter}</motion.span>
+                            ))}
                         </motion.span>
                     </Link>
                 </button>
