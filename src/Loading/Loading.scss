@@ -1,6 +1,5 @@
 #loading {
     position: relative;
-    // background: #212121;
     overflow: hidden;
 
     .loading__black {
@@ -8,22 +7,7 @@
         height: 100vh;
     }
 
-    // .loading__text {
-    //     position: absolute;
-    //     display: flex;
-    //     height: 100vh;
-    //     width: 100vw;
-    //     margin: 0;
-    //     top: 0;
-    //     left: -76px;
-    // }
-
     .loading__text {
-        // height: 100vh;
-        // width: 100vw;
-        // margin: 0;
-        // top: 0;
-        // left: -85px;
         display: none;
 
         @media (min-width: 900px) {
