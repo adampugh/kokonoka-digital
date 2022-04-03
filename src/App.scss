@@ -1,16 +1,11 @@
-@import url(https://db.onlinewebfonts.com/c/8a86b3e611f41da6ca263bf6c73dc65b?family=GDSage-Bold);
-@import url(https://db.onlinewebfonts.com/c/066ce24dae3730ed6c648b09efaea93a?family=Acumin+Variable+Concept);
-
 @font-face {
     font-family: 'GDSage-Bold';
-    src: url('https://db.onlinewebfonts.com/t/8a86b3e611f41da6ca263bf6c73dc65b.woff2') format('woff2'),
-        url('https://db.onlinewebfonts.com/t/8a86b3e611f41da6ca263bf6c73dc65b.woff') format('woff');
+    src: url('./fonts/GDSage-Bold.woff2') format('woff2'), url('./fonts/GDSage-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Acumin Variable Concept';
-    src: url('https://db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff2') format('woff2'),
-        url('https://db.onlinewebfonts.com/t/066ce24dae3730ed6c648b09efaea93a.woff') format('woff');
+    src: url('./fonts/Acumin-Variable-Concept.woff2') format('woff2');
 }
 
 * {
