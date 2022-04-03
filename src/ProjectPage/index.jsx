@@ -56,17 +56,17 @@ const childVariants = {
 const projects = {
     homeKitchen: {
         title: 'HomeKitchen',
-        text: 'Working with energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas. Working with colours to create a brand new exciting experience for an  forward with new ideas.',
+        text: 'Working with meal-prep subscription brand HomeKitchen, we created a modern and sleek design to attract target demographic users and clients helping to increase sign ups and growth by 34%.',
         images: [HomeKitchenDesktop, HomeKitchen3, HomeKitchen2, HomeKitchen1],
     },
     'allied-energy': {
         title: 'Allied Energy',
-        text: 'Working with energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas. Working with colours to create a brand new exciting experience for an  forward with new ideas.',
+        text: 'Working with Allied Energy, we created a modern and informative site to assist users with their energy inquiries, the submission of meter readings and contact forms.',
         images: [AEDeskop, AE3, AE1, AE2],
     },
     '45N': {
         title: '45°N',
-        text: 'Working with energy brand. Utilizing our excellence, new moves and continuing to move forward with new ideas. Working with colours to create a brand new exciting experience for an  forward with new ideas.',
+        text: "Working with 45°N, we created a modern and stylish e-commerce site keeping in-line with the company's traditional image and branding. Working with monochrome styling and responsive layout to create a brand new exciting experience for new and returning clients.",
         images: [FortyFiveNDesktop, FortFiveN1, FortFiveN2, FortFiveN4],
     },
     kamura: {

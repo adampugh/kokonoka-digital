@@ -2,10 +2,10 @@ import './Brands.scss';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import HP from '../assets/brands/hp.png';
-import Chanel from '../assets/brands/chanel.png';
-import PF from '../assets/brands/pf.png';
-import Plaid from '../assets/brands/plaid.png';
+import LV from '../assets/brands/lv.png';
+import Emirates from '../assets/brands/emirates.webp';
+import EL from '../assets/brands/el.png';
+import Mac from '../assets/brands/mac.png';
 
 const childVariants = {
     hidden: {
@@ -43,16 +43,16 @@ const Brands = () => {
             <motion.div className='container' initial={{ opacity: 0, y: 200 }} animate={animationControl}>
                 <div className='brands__grid'>
                     <motion.div className='brand__logo' variants={childVariants} initial='hidden' animate='visible'>
-                        <img src={HP} alt='brand' />
+                        <img src={Emirates} alt='brand' />
                     </motion.div>
                     <motion.div className='brand__logo' variants={childVariants} initial='hidden' animate='visible'>
-                        <img src={Chanel} alt='brand' />
+                        <img src={LV} alt='brand' />
                     </motion.div>
                     <motion.div className='brand__logo' variants={childVariants} initial='hidden' animate='visible'>
-                        <img src={PF} alt='brand' />
+                        <img src={EL} alt='brand' />
                     </motion.div>
                     <motion.div className='brand__logo' variants={childVariants} initial='hidden' animate='visible'>
-                        <img src={Plaid} alt='brand' />
+                        <img src={Mac} alt='brand' />
                     </motion.div>
                 </div>
                 <motion.div variants={childVariants} initial='hidden' animate='visible'>

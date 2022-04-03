@@ -9,22 +9,22 @@ const containerVariants = {
         opacity: 0,
         transition: {
             ease: 'easeInOut',
-            duration: .5
-        }
-    }
-}
+            duration: 0.5,
+        },
+    },
+};
 
-const NotFoundPage  = () => {
-    return (
-        <motion.div className="site" variants={containerVariants} exit="exit">
-            <Nav />
-            <div id="notFound" className="container">
-                <h1>404</h1>
-                <p>Sorry page not found.</p>
-                <button className="fade-button"><Link to="/">Home</Link></button>
-            </div>
-        </motion.div>
-    );
-}
+const NotFoundPage = () => (
+    <motion.div className='site' variants={containerVariants} exit='exit'>
+        <Nav />
+        <div id='notFound' className='container'>
+            <h1>404</h1>
+            <p>Sorry page not found.</p>
+            <button className='fade-button'>
+                <Link to='/'>Home</Link>
+            </button>
+        </div>
+    </motion.div>
+);
 
 export default NotFoundPage;
