@@ -20,7 +20,7 @@ const NotFoundPage = () => (
         <div id='notFound' className='container'>
             <h1>404</h1>
             <p>Sorry page not found.</p>
-            <button className='fade-button'>
+            <button className='fade-button' aria-label='home'>
                 <Link to='/'>Home</Link>
             </button>
         </div>

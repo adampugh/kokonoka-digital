@@ -8,25 +8,25 @@ import Contact from '../Contact';
 import Footer from '../Footer';
 import Loading from '../Loading';
 
-import HomeKitchenDesktop from '../assets/projects/HomeKitchenDesktop.png';
-import HomeKitchen1 from '../assets/projects/HomeKitchen1.png';
-import HomeKitchen2 from '../assets/projects/HomeKitchen2.png';
-import HomeKitchen3 from '../assets/projects/HomeKitchen3.png';
+import HomeKitchenDesktop from '../assets/projects/HomeKitchenDesktop.webp';
+import HomeKitchen1 from '../assets/projects/HomeKitchen1.webp';
+import HomeKitchen2 from '../assets/projects/HomeKitchen2.webp';
+import HomeKitchen3 from '../assets/projects/HomeKitchen3.webp';
 
-import AEDeskop from '../assets/projects/AEDesktop.png';
-import AE1 from '../assets/projects/AE1.jpg';
-import AE2 from '../assets/projects/AE2.jpg';
-import AE3 from '../assets/projects/AE3.jpg';
+import AEDeskop from '../assets/projects/AEDesktop.webp';
+import AE1 from '../assets/projects/AE1.webp';
+import AE2 from '../assets/projects/AE2.webp';
+import AE3 from '../assets/projects/AE3.webp';
 
-import FortyFiveNDesktop from '../assets/projects/45°N.png';
-import FortFiveN1 from '../assets/projects/FortyFiveN1.jpg';
-import FortFiveN2 from '../assets/projects/FortyFiveN2.jpg';
-import FortFiveN4 from '../assets/projects/FortyFiveN4.png';
+import FortyFiveNDesktop from '../assets/projects/45°N.webp';
+import FortFiveN1 from '../assets/projects/FortyFiveN1.webp';
+import FortFiveN2 from '../assets/projects/FortyFiveN2.webp';
+import FortFiveN4 from '../assets/projects/FortyFiveN4.webp';
 
-import KamuraDesktop from '../assets/projects/KamuraDesktop.png';
-import Kamura1 from '../assets/projects/Kamura1.png';
-import Kamura3 from '../assets/projects/Kamura3.png';
-import Kamura4 from '../assets/projects/y.png';
+import KamuraDesktop from '../assets/projects/KamuraDesktop.webp';
+import Kamura1 from '../assets/projects/Kamura1.webp';
+import Kamura3 from '../assets/projects/Kamura3.webp';
+import Kamura4 from '../assets/projects/Kamura4.webp';
 
 const containerVariants = {
     exit: {
@@ -113,7 +113,9 @@ const Project1 = () => {
                 </div>
                 <div className='work__button__wrapper'>
                     <Link to='/work'>
-                        <button className='fade-button'>View all work</button>
+                        <button className='fade-button' aria-label='view all work'>
+                            View all work
+                        </button>
                     </Link>
                 </div>
             </motion.div>

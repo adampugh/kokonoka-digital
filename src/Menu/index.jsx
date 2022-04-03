@@ -82,14 +82,20 @@ const Menu = ({ handleHamburgerClick, handleMenuItemClick }) => {
                     <motion.div className='menu__navbar__wrapper' variants={navMenuVariant} exit={{ opacity: 0 }}>
                         <button
                             className='menu__navbar__wrapper__contact title-spaced'
+                            aria-label='contact'
                             onClick={() => handleMenuItemClick('contact')}>
                             <span className='menu__navbar__wrapper__contact__mobile'>
                                 <FontAwesomeIcon icon={faPaperPlane} />
                             </span>
                             <span className='menu__navbar__wrapper__contact__desktop'>Get in touch</span>
                         </button>
-                        <button className='menu__navbar__wrapper__logo title-spaced'>Kokonoka</button>
-                        <button className='menu__navbar__wrapper__hamburger' onClick={handleHamburgerClick}>
+                        <button className='menu__navbar__wrapper__logo title-spaced' aria-label='home'>
+                            Kokonoka
+                        </button>
+                        <button
+                            className='menu__navbar__wrapper__hamburger'
+                            aria-label='hamburger menu'
+                            onClick={handleHamburgerClick}>
                             <FontAwesomeIcon icon={faTimes} />
                         </button>
                     </motion.div>

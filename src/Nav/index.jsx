@@ -84,6 +84,7 @@ const Nav = () => {
             <div className='navbar__wrapper'>
                 <motion.button
                     className='navbar__wrapper__contact title-spaced'
+                    aria-label='contact'
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: buttonVariantDelay, duration: 1 }}
@@ -93,17 +94,20 @@ const Nav = () => {
                     </span>
                     <span className='navbar__wrapper__contact__desktop'>Get in touch</span>
                 </motion.button>
-                <button className='navbar__wrapper__logo title-spaced'>
+                <button className='navbar__wrapper__logo title-spaced' aria-label='home button'>
                     <Link to='/'>
                         <motion.span variants={letterVariant} initial='hidden' animate='visible'>
-                            {['K', 'O', 'K', 'O', 'N', 'O', 'K', 'A'].map((letter) => (
-                                <motion.span variants={childVariants}>{letter}</motion.span>
+                            {['K', 'O', 'K', 'O', 'N', 'O', 'K', 'A'].map((letter, i) => (
+                                <motion.span variants={childVariants} key={i}>
+                                    {letter}
+                                </motion.span>
                             ))}
                         </motion.span>
                     </Link>
                 </button>
                 <motion.button
                     className='navbar__wrapper__hamburger title-spaced'
+                    aria-label='hamburger menu'
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: buttonVariantDelay, duration: 1 }}

@@ -2,10 +2,10 @@ import './Brands.scss';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import LV from '../assets/brands/lv.png';
+import LV from '../assets/brands/lv.webp';
 import Emirates from '../assets/brands/emirates.webp';
-import EL from '../assets/brands/el.png';
-import Mac from '../assets/brands/mac.png';
+import EL from '../assets/brands/el.webp';
+import Mac from '../assets/brands/mac.webp';
 
 const childVariants = {
     hidden: {
