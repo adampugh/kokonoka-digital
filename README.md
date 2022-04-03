@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cf3b3f4c-2893-4c30-81fe-eaa7181f6603/deploy-status)](https://app.netlify.com/sites/kokonoka/deploys)
+
 ## TECH USED
 
 <div>
@@ -8,6 +10,7 @@
     <img src="https://img.shields.io/badge/-HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge" />
     <img src="https://img.shields.io/badge/-Font%20Awesome-528DD7?logo=font-awesome&logoColor=white&style=for-the-badge" />
     <img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/-Netlify-#00C7B7?logo=netlify&logoColor=white&style=for-the-badge" />
 </div>
 
 ## SCRIPTS
